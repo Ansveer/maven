@@ -17,7 +17,7 @@ public class Sorter {
     }
     public void bubbleSort(int[] arr) {
         int n = arr.length;
-        int temp = 0;
+        int temp;
         for (int i = 1; i < n; i++) {
             for (int j = n - 1; j >= i; j--) {
                 if (arr[j] < arr[j - 1]) {
@@ -32,7 +32,7 @@ public class Sorter {
 
     public void bubbleSort(long[] arr) {
         int n = arr.length;
-        long temp = 0;
+        long temp;
         for (int i = 1; i < n; i++) {
             for (int j = n - 1; j >= i; j--) {
                 if (arr[j] < arr[j - 1]) {
