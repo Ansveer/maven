@@ -15,7 +15,7 @@ public class Sorter {
         }
         return true;
     }
-    public int[] bubbleSort(int[] arr) {
+    public void bubbleSort(int[] arr) {
         int n = arr.length;
         int temp = 0;
         for (int i = 1; i < n; i++) {
@@ -28,10 +28,9 @@ public class Sorter {
 
             }
         }
-        return arr;
     }
 
-    public long[] bubbleSort(long[] arr) {
+    public void bubbleSort(long[] arr) {
         int n = arr.length;
         long temp = 0;
         for (int i = 1; i < n; i++) {
@@ -44,7 +43,6 @@ public class Sorter {
 
             }
         }
-        return arr;
     }
 
     public void swap(int[] arr, int i, int j)
@@ -87,14 +85,13 @@ public class Sorter {
         swap(arr, i + 1, high);
         return (i + 1);
     }
-    public int[] quickSort(int[] arr, int low, int high)
+    public void quickSort(int[] arr, int low, int high)
     {
         if (low < high) {
             int pi = partition(arr, low, high);
             quickSort(arr, low, pi - 1);
             quickSort(arr, pi + 1, high);
         }
-        return arr;
     }
     public void quickSort(long[] arr, int low, int high) {
         if (low < high) {
